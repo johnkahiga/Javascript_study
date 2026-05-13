@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>String Methods</p>
+    </div>
+    <script>
+        let first_name='John'
+        console.log(first_name.length)
+        console.log(first_name.charAt(2))
+
+        let sentense='I have a dog'
+        console.log(sentense.slice(3,8))
+        console.log(sentense.slice())
+
+        console.log(sentense.toLowerCase())
+        console.log(sentense.toUpperCase())
+
+        let x='        This is the biggest the largest      '
+        let trimmed= x.trim()
+        console.log(trimmed)
+        console.log(trimmed.length)
+        console.log(x.length)
+        let trimmed2=x.trimEnd()
+        console.log(trimmed2)
+        console.log(trimmed2.length)
+        let trimmed3=x.trimStart()
+        console.log(trimmed3)
+        console.log(trimmed3.length)
+
+        let f_name='John '
+        let l_name='Kahiga'
+        let full_name=f_name.concat(l_name)
+        console.log(full_name)
+
+        console.log(f_name.startsWith('J'))
+        console.log(f_name.endsWith('n'))
+
+        let new_name=f_name.replace('J','W')
+        console.log(new_name)
+    </script>
+</body>
+</html>
+
+
+split()
+substring()
+includes()
+task on slide 56
