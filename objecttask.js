@@ -3,3 +3,4 @@ console.log(my_arr[3][2]["currency"])
 console.log(my_arr[2])
 console.log(my_arr[3][1])
 my_arr[3][2].amount = 90
+console.log(my_arr)
