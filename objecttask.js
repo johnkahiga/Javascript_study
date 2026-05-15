@@ -9,4 +9,3 @@ my_arr[4]=value
 console.log(my_arr)
 my_arr[6]='Jane'
 console.log(my_arr)
-
