@@ -5,10 +5,10 @@ let speed_limit=70
 if (speed<speed_limit){
      console.log("Ok")
 }else{
-    let points = Math.floor((speed -speed_limit) / 5)
+    let points = Math.ceil((speed -speed_limit) / 5)
     if(points>12){
        console.log('License suspended') 
     }else{
-        console.log(points + 'Almost getting license suspended')
+        console.log(points + ' Almost getting license suspended')
     }
 }

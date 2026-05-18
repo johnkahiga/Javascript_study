@@ -5,8 +5,16 @@
 // Once you learn functions,revisit this and write this code inside a function.
 
 let n=prompt('Enter phone number')
-if (n.startsWith('7') ||n.startsWith('+254')||n.startsWith('07')||n.startsWith('01')||n.startsWith('254')){
+if ((n.startsWith('07')||n.startsWith('01'))&&n.length==10){
     console.log(n.slice(1).replace('','+254'))
 }else{
-    console.log('Not a phone number')
+    if(n.startsWith('+254')&& n.length==13){
+        console.log(n) 
+    }else if(n.startsWith('254')&& n.length==12){
+        console.log("+"+n)
+    }else if(n.startsWith('7')&& n.length==9){
+        console.log(n.replace('','+254'))
+    }else{
+        console.log('Not a phone number')
+    }   
 }
